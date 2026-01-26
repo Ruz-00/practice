@@ -1,0 +1,6 @@
+let itemName;
+itemName = "Pizza";
+let price;
+price = 500;
+
+console.log(itemName + " " + price);
