@@ -1,11 +1,22 @@
-"indexing"
 const cart = ["Pizza", "Burger"];
-console.log([0]);
-console.log([1]);
 
-"add to arrays"
+"array indexing"
+console.log(cart[0]);
+console.log(cart[1]);
+
+"output"
+Pizza
+Burger
+
+"add to array" // add from end
 cart.push("Fries");
 cart.push("Spaghetti");
 
-"remove to arrays"
-cart.pop(); // last item removed
+"output"
+["Pizza", "Burger", "Fries", "Spaghetti"]
+
+"remove to arrays" // remove from end
+cart.pop(); 
+
+"output"
+["Pizza", "Burger", "Fries"]
