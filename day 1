@@ -1,8 +1,8 @@
 let itemName;
-itemName = "Pizza";
+itemName = "Pizza";  // set variable
 let price;
 price = 500;
 
-console.log(itemName + " " + price);
+console.log(itemName + " " + price); // declare variable
 
 
