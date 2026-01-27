@@ -5,4 +5,4 @@ price = 500;
 
 console.log(itemName + " " + price); // declare variable
 
-
+ 
