@@ -1,0 +1,33 @@
+"using if/else"
+let price = 500;
+let qty = 5;
+
+if (qty > 5){
+    console.log("DISCOUNT APPLIED");
+}
+else{
+    console.log("NO DISCOUNT");
+}
+
+"output"
+  NO DISCOUNT
+
+  +
+
+"discount if qty>5"
+let subTotal = price * qty;
+let discount = 0;
+
+if (qty > 5) {
+    discount = subTotal * 0.10;
+}
+
+let total = subTotal - discount;
+console.log(total);
+
+"output"
+ NO DISCOUNT
+ 2500
+
+
+  
