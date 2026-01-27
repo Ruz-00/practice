@@ -6,6 +6,16 @@ const item = {
 console.log(item.name); // read
 console.log(item.price);
 
-item.name = "Pizza"; // write
-item.price = 500;
-  
+"output"
+Pizza
+500
+
+item.name = "Burger"; // rewrite
+item.price = 200;
+
+console.log(item.name);
+console.log(item.price);
+
+"output"
+Burger
+200
