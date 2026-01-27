@@ -1,0 +1,11 @@
+"creating function"
+function calculateSubtotal(price, qty) {
+  return price * qty;
+}
+
+"using function"
+let subTotal = calculateSubtotal(10, 5);
+console.log(subTotal);
+
+"output"
+  50
