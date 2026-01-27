@@ -1,0 +1,11 @@
+const item = {
+  name: "Pizza",
+  price: 500
+};
+
+console.log(item.name);
+console.log(item.price);
+
+item.name = "Pizza";
+item.price = 500;
+  
