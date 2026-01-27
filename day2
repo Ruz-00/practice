@@ -1,11 +1,11 @@
 const item = {
-  name: "Pizza",
+  name: "Pizza",          // create item object
   price: 500
 };
 
-console.log(item.name);
+console.log(item.name);          // read
 console.log(item.price);
 
-item.name = "Pizza";
+item.name = "Pizza";         // write
 item.price = 500;
   
