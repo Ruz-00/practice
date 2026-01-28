@@ -1,0 +1,18 @@
+const cart = ["Pizza", "Burger", "Fries"];
+let total = 0;
+
+console.log("RECEIPT");
+
+for (let i=0; i<cart.length; i++) {
+    console.log(`${cart[i]} - "100"`);
+    total += 100;
+}
+
+console.log("Total: " + total);
+
+//output
+  RECEIPT
+Pizza - "100"
+Burger - "100"
+Fries - "100"
+Total: 300
