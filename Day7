@@ -1,0 +1,33 @@
+let itemName = "Pizza";
+let itemPrice = 200;
+let quantity = 6;
+
+let item = {
+  name: itemName,
+  price: itemPrice,
+  qty: quantity
+};
+
+let cart = [];
+cart.push(item);
+
+function calculateSubtotal(price, qty) {
+  return price * qty;
+}
+
+for (let i = 0; i < cart.length; i++) {
+  let currentItem = cart[i];
+  let subtotal = calculateSubtotal(currentItem.price,currentItem.qty);
+  let discount = 0;
+
+if (currentItem.qty > 5) {
+  discount = 0.10;
+}
+subtotal = subtotal - (subtotal * discount);
+
+  console.log("Item: " + currentItem.name);
+  console.log("Qty: " + currentItem.qty);
+  console.log("Total: " +subtotal);
+}
+
+
