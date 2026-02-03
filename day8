@@ -1,0 +1,31 @@
+const items = [ 
+    {name: "bag" , price: 200 },
+    {name: "shoes" , price: 600},
+    {name: "shirt" , price: 250},
+    {name: "short" , price: 500}
+    ];
+    
+const result = items.filter(items => items.price >= 500);
+console.log(result);
+
+// output
+[ { name: 'shoes', price: 600 }, { name: 'short', price: 500 } ]
+
+
+const item = [ {name: "bag" , price: 200 , quantity: 4},
+        {name: "shoes", price: 600, quantity: 2},
+        {name: 'shirt', price: 250, quantity: 6},
+        {name: "shotr", price: 500, quantity: 2}];
+
+const total = item.map(item =>({name: item.name , total: item.price * item.quantity}) );
+
+console.log(total);
+
+// output
+
+[
+  { name: 'bag', total: 800 },
+  { name: 'shoes', total: 1200 },
+  { name: 'shirt', total: 1500 },
+  { name: 'shotr', total: 1000 }
+]
