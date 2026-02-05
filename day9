@@ -1,0 +1,17 @@
+const item = [{name: "bag" , price: 500 , quantity: 3},
+{name: "shirt" , price: 300, quantity: 3},
+{name: "short" , price: 200, quantity: 3}];
+
+const tax = 0.12;
+
+const subTotal = item.reduce((acc, item) => acc + item.quantity * item.price, 0);
+
+const totalWithTax = subTotal + (subTotal * tax);
+
+console.log(subTotal);
+console.log(totalWithTax);
+
+//output
+
+3000
+3360
