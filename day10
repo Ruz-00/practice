@@ -1,0 +1,7 @@
+function isValidBarcode(barcode) {
+  if (!barcode) return false; // check content, may laman ba o wala?
+  if (typeof barcode !== "string") return false; // check if exact type, string ba talaga?
+  if (barcode === "000000") return false; // check if same value, sakto ba?
+
+  return true;
+}
