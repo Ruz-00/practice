@@ -1,0 +1,8 @@
+function setPrice(price) {
+  try { // attempt
+    if (price <= 0) throw "Invalid price"; //trigger
+    console.log("OK:", price);
+  } catch (e) { //handle
+    console.log(e);
+  }
+}
