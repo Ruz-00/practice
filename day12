@@ -1,0 +1,25 @@
+function fetchUser() {
+    return new Promise((resolve, reject) => {
+        console.log("Fetching user...");
+        
+        setTimeout(() => {
+            const success = true;
+            if (success) {
+                resolve({ id: 1, name: "Ruzel" });
+            } else {
+                reject("Failed to fetch user");
+            }
+        }, 2000); //time of setTimeout in ms
+    });
+}
+
+async function getUser() { //using async allow you to use await
+    try { //attempt
+        const user = await fetchUser(); // pause until resolve or reject
+        console.log("User received:", user);
+    } catch (error) { //handle error
+        console.error("Error:", error);
+    }
+}
+
+getUser();
