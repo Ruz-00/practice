@@ -1,0 +1,20 @@
+let cart = []
+
+function addToCart(name, price) {
+  cart.push({ name, price }) //add to cart function
+}
+
+function removeFromCart(name) {
+  cart = cart.filter(item => item.name !== name) //remove from cart function
+}
+
+function getTotal() {
+  return cart.reduce((sum, item) => sum + item.price, 0)  //get total function
+}
+
+addToCart("Burger", 50)
+addToCart("Fries", 30)
+addToCart("Coke", 20)
+
+console.log(cart)
+console.log("Total:", getTotal())
